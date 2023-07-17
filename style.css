@@ -29,6 +29,11 @@
   color: rgba(0, 0, 0, 0.795);
   padding-right: 50px;
   margin-right: 10px;
+  transition: transform .2s;
+}
+
+.nav-link:hover{
+  transform: scale(1.2);
 }
 
 header {
@@ -59,8 +64,8 @@ header {
 
 .container {
   position: relative;
-  padding-top: 20px;
   text-align: center;
+  padding: 0;
   max-width: 2000px;
   flex-wrap: wrap;
 }
@@ -72,7 +77,6 @@ header {
 footer hr {
   width: 0%;
   min-width: 97%;
-  margin: 0 auto;
   border-bottom: 1px solid rgb(255, 255, 255);
 }
 
@@ -89,6 +93,12 @@ footer hr {
 
 .col-4{
   padding: 0px 50px;
+  margin-top: 1rem;
+}
+
+p {
+  margin: 0;
+  padding-bottom: 1rem;
 }
 
 .col-5 {
@@ -106,6 +116,16 @@ footer{
   background-color: black;
   color: white;
   text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
+.row{
+  margin-right: 0;
+}
+
+.row a{
+  display: block;
 }
   
 
