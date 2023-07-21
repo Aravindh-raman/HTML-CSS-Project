@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .navbar {
   padding: 10px 0px;
   height: auto;
@@ -45,6 +51,7 @@ header {
 
 .main-content {
   margin: 60px 100px;
+  flex: 1;
 }
 
 .main-content h1 {
@@ -76,7 +83,8 @@ header {
 
 footer hr {
   width: 0%;
-  min-width: 97%;
+  min-width: 98%;
+  align-items: center;
   border-bottom: 1px solid rgb(255, 255, 255);
 }
 
@@ -116,8 +124,9 @@ footer{
   background-color: black;
   color: white;
   text-align: center;
-  position: relative;
   bottom: 0;
+  width: 100%;
+  padding: 20px 0;
 }
 
 .row{
@@ -126,6 +135,11 @@ footer{
 
 .row a{
   display: block;
+  color: inherit;
+}
+
+section{
+  flex: 1;
 }
   
 
@@ -180,6 +194,9 @@ footer{
     font-size: 20px;
     padding-right: 30px;
   }
+  footer hr{
+    min-width: 90%;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 769px) {
@@ -210,6 +227,9 @@ footer{
   .navbar .container-fluid .navbar-nav .nav-link {
     font-size: 20px;
     padding-right: 20px;
+  }
+  footer hr{
+    min-width: 95%;
   }
 }
 
