@@ -37,7 +37,7 @@ body {
   margin-right: 10px;
   transition: transform .2s;
 }
-
+ 
 .nav-link:hover{
   transform: scale(1.2);
 }
@@ -74,7 +74,6 @@ header {
   text-align: center;
   padding: 0;
   max-width: 2000px;
-  flex-wrap: wrap;
 }
 
 .container .dis {
@@ -125,12 +124,13 @@ footer{
   color: white;
   text-align: center;
   bottom: 0;
-  width: 100%;
+  max-width: 100%;
   padding: 20px 0;
 }
 
 .row{
   margin-right: 0;
+  margin-left: 0;
 }
 
 .row a{
@@ -151,6 +151,8 @@ section{
   .navbar-nav {
     flex-direction: column;
     margin-top: 10px;
+    margin-left: 10px;
+    justify-content: center;
   }
   .col-xs-6 {
     flex-basis: 50%;
@@ -179,10 +181,6 @@ section{
   .navbar .container-fluid{
     display: inline-block;
     text-align: center;
-  }
-  .navbar-nav{
-    margin-left: 70px;
-    margin-top: 20px;
   }
   .navbar-brand img{
     width: 80px;
@@ -232,5 +230,3 @@ section{
     min-width: 95%;
   }
 }
-
-
