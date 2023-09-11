@@ -72,7 +72,7 @@ header {
 .container {
   position: relative;
   text-align: center;
-  padding: 0;
+  padding: 0; 
   max-width: 2000px;
 }
 
@@ -141,9 +141,62 @@ footer{
 section{
   flex: 1;
 }
-  
 
-@media (max-width: 575.98px) {
+@media (max-width: 300px){
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    justify-content: center;
+  }
+  .col-xs-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .col-xs {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .col-4{
+    padding: 20px 0px;
+  }
+  header{
+    padding: 0px;
+  }
+  .main-content {
+    margin: 60px 0px;
+  }
+  .main-content h1 {
+    font-size: 33px;
+  }
+  .main-content h2 {
+    font-size: 15px;
+    margin: 0px 0px;
+  }
+  .navbar .container-fluid{
+    display: inline-block;
+    text-align: center;
+  }
+  .navbar-brand img{
+    width: 80px;
+  }
+  .navbar .container-fluid .navbar-brand {
+    font-size: 40px;
+  }
+  .navbar .container-fluid .navbar-nav .nav-link {
+    font-size: 20px;
+    padding-right: 0px;
+  }
+  footer hr{
+    min-width: 90%;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 575.98px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -197,7 +250,7 @@ section{
   }
 }
 
-@media (min-width: 576px) and (max-width: 769px) {
+@media (min-width: 576px) and (max-width: 1300px) {
   .col-sm-3 {
     flex-basis: 25%;
     max-width: 25%;
@@ -230,3 +283,5 @@ section{
     min-width: 95%;
   }
 }
+
+
