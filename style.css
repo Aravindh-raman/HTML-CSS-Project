@@ -138,6 +138,10 @@ footer{
   color: inherit;
 }
 
+.row a{
+  text-decoration: none;
+}
+
 section{
   flex: 1;
 }
