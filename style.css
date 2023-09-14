@@ -21,16 +21,16 @@ body {
 .navbar-brand img {
   width: 130px;
 }
-.navbar .container-fluid .navbar-brand {
+.navbar .navbar-brand {
   font-size: 60px;
   color: black;
 }
 
-.navbar .container-fluid img {
+.navbar img {
   margin-left: -3%;
 }
 
-.navbar .container-fluid .navbar-nav .nav-link {
+.navbar .navbar-nav .nav-link {
   font-size: 25px;
   color: rgba(0, 0, 0, 0.795);
   padding-right: 50px;
@@ -38,8 +38,9 @@ body {
   transition: transform 0.2s;
 }
 
-.nav-link:hover {
+.navbar .navbar-nav .nav-link:hover {
   transform: scale(1.2);
+  color: rgba(0, 0, 0, 0.795);
 }
 
 header {
@@ -151,6 +152,8 @@ section {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    display: inline-block;
+    text-align: center;
   }
   .navbar-nav {
     flex-direction: column;
@@ -182,17 +185,13 @@ section {
     font-size: 15px;
     margin: 0px 0px;
   }
-  .navbar .container-fluid {
-    display: inline-block;
-    text-align: center;
-  }
   .navbar-brand img {
     width: 80px;
   }
-  .navbar .container-fluid .navbar-brand {
+  .navbar .navbar-brand {
     font-size: 40px;
   }
-  .navbar .container-fluid .navbar-nav .nav-link {
+  .navbar .navbar-nav .nav-link {
     font-size: 20px;
     padding-right: 0px;
   }
@@ -205,6 +204,8 @@ section {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    display: inline-block;
+    text-align: center;
   }
   .navbar-nav {
     flex-direction: column;
@@ -236,17 +237,13 @@ section {
     font-size: 15px;
     margin: 0px 0px;
   }
-  .navbar .container-fluid {
-    display: inline-block;
-    text-align: center;
-  }
   .navbar-brand img {
     width: 80px;
   }
-  .navbar .container-fluid .navbar-brand {
+  .navbar .navbar-brand {
     font-size: 40px;
   }
-  .navbar .container-fluid .navbar-nav .nav-link {
+  .navbar .navbar-nav .nav-link {
     font-size: 20px;
     padding-right: 30px;
   }
@@ -277,10 +274,10 @@ section {
   .navbar-brand img {
     width: 100px;
   }
-  .navbar .container-fluid .navbar-brand {
+  .navbar .navbar-brand {
     font-size: 40px;
   }
-  .navbar .container-fluid .navbar-nav .nav-link {
+  .navbar .navbar-nav .nav-link {
     font-size: 20px;
     padding-right: 20px;
   }
